@@ -1,0 +1,808 @@
+@font-face {
+	font-family: "Maxa Grotesk"; 
+	src: url("../fonts/Maxa-Grotesk-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Maxa Grotesk"; 
+	src: url("../fonts/Maxa-Grotesk-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+html {
+	scroll-behavior: smooth;
+	overflow-x:hidden;
+}
+body.maxa-megakoncert {
+	display: block;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "Maxa Grotesk", Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 23px;
+	color: #000;
+	background-color: #6200bf;
+	scroll-behavior: smooth;
+}
+.maxa-megakoncert .title-h1 {
+	color: #fff;
+	font-size: 3rem;
+	font-weight: 700;
+	letter-spacing: .5px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	text-align: center;
+	text-shadow: 0 10px 4px #000000;
+	margin: 0 0 20px;
+}
+.maxa-megakoncert .title-h2 {
+	color: #fff;
+	font-size: 1.3rem;
+	font-weight: 700;
+	line-height: 1.2;
+	text-transform: uppercase;
+	text-align: center;
+	text-shadow: 0 6px 4px #000000;
+	margin: 0 0 10px;
+}
+.maxa-megakoncert .title-h3 {
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-align: center;
+	line-height: 1.2;
+	margin: 0 0 25px;
+}
+.maxa-megakoncert .section-title-h1 {
+	color: #fff;
+	font-size: 2.5rem;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+	margin: 0 0 20px;
+}
+.maxa-megakoncert .section-title-h2 {
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 700;
+	letter-spacing: .5px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 0 35px;
+}
+.maxa-megakoncert p {
+	color: #fff;
+	text-align: left;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.6;
+	margin: .5em 0;
+	word-break: break-word;
+}
+.maxa-megakoncert a {
+	text-decoration: none;
+	outline: none;
+	color: #ffffff;
+}
+.maxa-megakoncert .underline {
+	text-decoration: underline;
+}
+.maxa-megakoncert .btn-wrapper {
+	margin: 2em 0;
+	z-index: 2;
+}
+.maxa-megakoncert .btn-button {
+	background-color: #ffb233;
+	border-width: 0;
+	min-width: 180px;
+	max-width: fit-content;
+	border-radius: 38px;
+	-webkit-box-shadow: 0px 10px 15px 0px rgba(57,55,61,1);
+	-moz-box-shadow: 0px 10px 15px 0px rgba(57,55,61,1);
+	box-shadow: 0px 10px 15px 0px rgba(57,55,61,1);
+	color: #6000bf;
+	padding: 15px 35px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: 700;
+	cursor: pointer;
+	opacity: 1;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.maxa-megakoncert .btn-button:hover {
+	background-color: #ffb233e6;
+}
+.maxa-megakoncert .bg-orange {
+	background-color: #ffb233;
+}
+.maxa-megakoncert .bg-violet-teal {
+background: #00CCCC;
+background: linear-gradient(0deg,rgba(0, 204, 204, 1) 0%, rgba(96, 0, 191, 1) 40%);
+}
+.maxa-megakoncert .bg-violet {
+	background-color: #6000bf;
+}
+.maxa-megakoncert .bg-teal {
+	background-color: #00b2b2;
+}
+.maxa-megakoncert .orange-color {
+	color: #ffb233;
+}
+.maxa-megakoncert .teal-color {
+	color: #00cccc;
+}
+.maxa-megakoncert .violet-color {
+	color: #6000bf;
+}
+.maxa-megakoncert .white-color {
+	color: #fff;
+}
+.maxa-megakoncert .strong {
+	font-weight: 700;
+}
+.maxa-megakoncert .img-wh {
+	width: 100%;
+	height: auto;
+}
+.maxa-megakoncert .py-4 {
+	padding: 2em 0;
+}
+.maxa-megakoncert .pt-2 {
+	padding-top: 1em;
+}
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+@media (min-width: 768px) {
+	.container {
+		width: 720px;
+	}
+}
+@media (min-width: 992px) {
+	.container {
+		width: 960px;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+		width: 1140px;
+	}
+}
+@media (min-width: 1400px) {
+	.container {
+		width: 1100px;
+	}
+}
+
+/* Site header */
+.maxa-megakoncert .site-header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: top;
+	-ms-flex-pack: top;
+	justify-content: top;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
+}
+/* Site header end */
+
+/* Mobile menu */
+.maxa-megakoncert .menuItem {
+	display: block;
+	margin: 2rem 1.5rem;
+}
+.maxa-megakoncert .menuItem:hover {
+	text-decoration: underline;
+}
+.maxa-megakoncert .hamburger {
+	position: relative;
+	z-index: 100;
+	top: 0;
+	right: 0;
+	padding: 4px;
+	border: 0;
+	background: transparent;
+	cursor: pointer;
+}
+.maxa-megakoncert .closeIcon {
+	display: none;
+}
+.maxa-megakoncert .menu {
+	display: none;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	right: 0;
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: -webkit-transform 0.2s;
+	-o-transition: transform 0.2s;
+	transition: transform 0.2s;
+	transition: transform 0.2s, -webkit-transform 0.2s;
+	z-index: 99;
+	background: #502983;
+	color: #fff;
+	list-style: none;
+	padding-top: 4rem;
+}
+.maxa-megakoncert .menu.showMenu {
+	display: block !important;
+}
+.maxa-megakoncert .svg-menu-close {
+	display: none;
+}
+.maxa-megakoncert .svg-menu {
+	display: block;
+}
+.maxa-megakoncert .navigation-wrapper-mobile {
+	display: block;
+	position: fixed;
+	height: auto;
+	width: 100%;
+	z-index: 99;
+	background-color: #502983;
+}
+.maxa-megakoncert .navigation-wrapper-mobile .navigation-modify-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	position: relative;
+	padding: 1em;
+}
+.maxa-megakoncert .navigation-wrapper-mobile .logo-top {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 15px;
+}
+.maxa-megakoncert .navigation-wrapper-mobile .logo-top a {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.maxa-megakoncert .navigation-wrapper-mobile .logo-mobile-inner .logo-top img {
+	width: 100px;
+	height: auto;
+}
+.maxa-megakoncert .navigation-wrapper-mobile nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+.maxa-megakoncert .navigation-wrapper-mobile ul {
+	margin: 0;
+	padding: 0;
+}
+/* Mobile menu end */
+/* Desktop menu */
+.maxa-megakoncert .navigation-wrapper-desktop .logo-top img {
+	width: 150px;
+	height: auto;
+}
+.maxa-megakoncert .navigation-wrapper-desktop nav li {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.maxa-megakoncert .navigation-wrapper-desktop {
+	display: none;
+}
+.maxa-megakoncert .navbar-scrolled {
+	background-color: #6000bf;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.maxa-megakoncert .navigation-wrapper-desktop .navigation-modify-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: space-between;
+	align-items: center;
+	gap: 30px;
+	width: 100%;
+}
+.maxa-megakoncert .navigation-wrapper-desktop ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	gap: 13px;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	list-style: none;
+}
+.maxa-megakoncert .navigation-wrapper-desktop nav .orange-color,
+.maxa-megakoncert .navigation-wrapper-mobile nav .orange-color {
+	color: #ffb233;
+}
+.maxa-megakoncert .navigation-wrapper-desktop nav a,
+.maxa-megakoncert .navigation-wrapper-mobile nav a {
+	position: relative;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: .3px;
+	line-height: 1.5;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.maxa-megakoncert .navigation-wrapper-desktop nav a:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background-color: #ffffff;
+	bottom: 0;
+	left: 0;
+	-webkit-transform-origin: right;
+	-ms-transform-origin: right;
+	transform-origin: right;
+	-webkit-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: -webkit-transform .3s ease-in-out;
+	transition: -webkit-transform .3s ease-in-out;
+	-o-transition: transform .3s ease-in-out;
+	transition: transform .3s ease-in-out;
+	transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+.maxa-megakoncert .navigation-wrapper-desktop nav a:hover:before {
+	-webkit-transform-origin: left;
+	-ms-transform-origin: left;
+	transform-origin: left;
+	-webkit-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	transform: scaleX(1);
+}
+.maxa-megakoncert .navigation-wrapper-desktop nav .link-item-update:hover:before {
+	-webkit-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	transform: scaleX(0);
+}
+/* Desktop menu end */
+
+.maxa-megakoncert .section {
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	scroll-margin-top: 50px;
+}
+/* main */
+.maxa-megakoncert .section-banner {
+	position: relative;
+	width: 100%;
+	background-image: url('../img/hlavni-obrazek.webp');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 7em 0 1em;
+}
+.maxa-megakoncert .banner {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	gap: 5em;
+}
+.maxa-megakoncert .text-box-1 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.maxa-megakoncert .buttons-inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 0;
+	width: 100%;
+}
+.maxa-megakoncert .buttons-inner .box {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 100%;
+	margin: 0 0 1em;
+}
+.maxa-megakoncert .buttons-inner .box p {
+	margin: 5px 0 0;
+}
+.maxa-megakoncert .buttons-inner .box a {
+	color: #6000bf;
+	font-size: 1.1rem;
+	letter-spacing: 2px;
+	border-radius: 20px;
+	padding: 6px 25px;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+	min-width: 50%;
+}
+.maxa-megakoncert .buttons-inner .box a:hover {
+	background-color: #00ccccba;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.maxa-megakoncert .buttons-inner .box .no-hover:hover {
+	background-color: #e5007e;
+}
+.maxa-megakoncert .button {
+	display: inline-block;
+	background-color: #007bff;
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+.maxa-megakoncert .main-points-p {
+	color: #ffb233;
+	font-size: 1.1rem;
+	font-weight: 700;
+	margin: 1.5em 0 .1em;
+}
+.maxa-megakoncert .program-maxazone .program-title {
+	font-size: 2rem;
+	line-height: 1.3;
+	margin: 0 0 1em;
+}
+.maxa-megakoncert .concert-organizer .box-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.maxa-megakoncert .concert-organizer .box-wrapper p {
+	font-size: 1rem;
+    text-transform: uppercase;
+}
+.maxa-megakoncert .concert-organizer .box-wrapper img {
+	width: 100%;
+	height: 50px;
+	object-fit: contain;
+}
+.maxa-megakoncert .text-button-inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 20px;
+	padding: 0 0 1em;
+}
+.maxa-megakoncert .text-block-inner {
+	width: 100%;
+}
+/* Main end */
+
+/* Footer */
+.maxa-megakoncert .site-footer {
+	display: block;
+	padding: 2em 1em;
+	margin: 0 auto;
+	max-width: 950px;
+	text-align: center;
+}
+.maxa-megakoncert .site-footer a {
+	display: inline-block;
+}
+.maxa-megakoncert .footer-logo {
+	width: 150px;
+	height: auto;
+}
+.maxa-megakoncert .site-footer .text-image-inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 0 0 2em;
+}
+.maxa-megakoncert .site-footer .footer-warning {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	gap: 10px;
+}
+.maxa-megakoncert .footer-warning img {
+	width: auto;
+	height: 30px;
+}
+.maxa-megakoncert .footer-warning p {
+	color: #ffffff;
+	font-size: .9rem;
+	font-weight: 400;
+	text-align: left;
+	margin: 0;
+}
+.maxa-megakoncert .copyright {
+	font-size: .9rem;
+	font-weight: 400;
+	text-align: center;
+}
+.maxa-megakoncert .maxa-preferences-center {
+	color: #ffffff;
+	font-size: 1rem;
+	font-weight: 400;
+	text-decoration: none;
+	padding: 1em 0 0;
+}
+.maxa-megakoncert .maxa-preferences-center:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+	.maxa-megakoncert .section-title-h1 {
+		font-size: 4.7rem;
+	}
+	.maxa-megakoncert .section-title-h2 {
+		font-size: 2.3rem;
+	}
+	.maxa-megakoncert .title-h1 {
+		font-size: 4rem;
+		margin: 0;
+	}
+	.maxa-megakoncert .title-h2 {
+		font-size: 2.3rem;
+		margin: 0 0 10px;
+	}
+	.maxa-megakoncert .title-h3 {
+		font-size: 2.6rem;
+		margin: 0 0 25px;
+	}
+	.maxa-megakoncert .main-points-p {
+		font-size: 1.5rem;
+	}
+	.maxa-megakoncert .navigation-wrapper-desktop ul {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+	.maxa-megakoncert .btn-button {
+		padding: 15px 45px;
+	}
+	.maxa-megakoncert .section-banner {
+		padding: 9em 0 3em;
+	}
+	.maxa-megakoncert .banner {
+		gap: 11em;
+	}
+	.maxa-megakoncert .buttons-inner {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		gap: 5px 22px;
+	}
+	.maxa-megakoncert .buttons-inner .box {
+		width: auto;
+	}
+	.maxa-megakoncert .py-4 {
+		padding: 4em 0;
+	}
+	.maxa-megakoncert .pt-2 {
+		padding-top: 2em;
+	}
+	.maxa-megakoncert .text-button-inner {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		gap: 0;
+		padding: 1em 0 0;
+	}
+	.maxa-megakoncert .section {
+		scroll-margin-top: 5em;
+	}
+}
+
+@media (min-width: 992px) {
+	.maxa-megakoncert .site-header {
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		height: 100%;
+	}
+	.maxa-megakoncert .navigation-wrapper-desktop {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		width: 100%;
+		position: fixed;
+		height: 110px;
+		z-index: 99;
+	}
+	.maxa-megakoncert .navigation-wrapper-mobile {
+		display: none;
+	}
+	.maxa-megakoncert .w-60 {
+		width: 60%;
+	}
+	.maxa-megakoncert .title-h1 {
+		font-size: 7rem;
+	}
+	.maxa-megakoncert .title-h2 {
+		font-size: 2.8rem;
+	}
+	.maxa-megakoncert .title-h3 {
+		font-size: 3.3rem;
+	}
+	.maxa-megakoncert .btn-wrapper {
+		margin: 1em auto;
+		text-align: right;
+	}
+	.maxa-megakoncert .text-block-inner {
+	width: 80%;
+}
+}
+@media(min-width: 1024px) {
+	.maxa-megakoncert .navigation-wrapper-desktop .navigation-modify-container {
+		gap: 40px;
+	}
+}
+@media(min-width: 1200px) {
+	.maxa-megakoncert .navigation-wrapper-desktop .navigation-modify-container {
+		gap: 25px;
+	}
+	.maxa-megakoncert .navigation-wrapper-desktop ul {
+		gap: 13px 30px;
+	}
+}
+@media(min-width: 1400px) {
+	.maxa-megakoncert .navigation-wrapper-desktop .navigation-modify-container {
+		gap: 60px;
+	}
+}
